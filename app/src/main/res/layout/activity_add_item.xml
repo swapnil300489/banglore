@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.AddItem"
+    android:background="@color/colorBG">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Todo Item"
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorDarkBlack"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/id_addItem_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:hint="Title"
+                android:textColorHint="@color/colorDarkBlack"
+                android:textColor="@color/colorDarkBlack"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/id_itemDesc_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/rounded"
+                android:layout_margin="15dp"
+                android:hint="Item Description"
+                android:textColorHint="@color/colorDarkBlack"
+                android:textColor="@color/colorDarkBlack"
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:gravity="top"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+
+                <Button
+                    android:id="@+id/id_cancelBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="@color/colorDarkBlack"/>
+
+                <Button
+                    android:id="@+id/id_doneBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="@color/colorDarkBlack"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
